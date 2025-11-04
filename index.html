@@ -16,6 +16,7 @@
             background-color: #f7f7f7;
             scroll-behavior: smooth;
         }
+
         /* セクションヘッダーのカスタムスタイル */
         .section-title {
             position: relative;
@@ -25,6 +26,7 @@
             font-weight: 700;
             font-size: 2rem;
         }
+
         .section-title::after {
             content: '';
             position: absolute;
@@ -36,11 +38,13 @@
             background-color: #D97706; /* Amber-600 */
             border-radius: 9999px;
         }
+
         /* ホバー時のカードの浮き上がり効果 */
         .card-hover:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
+
         /* メインビジュアルの背景設定 */
         #hero {
             background-color: #1a202c; /* Dark Blue/Charcoal */
@@ -62,14 +66,22 @@
 
             <!-- ナビゲーションリンク -->
             <nav class="hidden md:flex space-x-8">
-                <a href="#about" class="text-gray-600 hover:text-[#D97706] transition duration-150 ease-in-out font-medium">会社概要</a>
-                <a href="#business" class="text-gray-600 hover:text-[#D97706] transition duration-150 ease-in-out font-medium">事業内容</a>
-                <a href="#contact" class="text-gray-600 hover:text-[#D97706] transition duration-150 ease-in-out font-medium">問い合わせ</a>
+                <a href="#about"
+                   class="text-gray-600 hover:text-[#D97706] transition duration-150 ease-in-out font-medium">会社概要</a>
+                <a href="#business"
+                   class="text-gray-600 hover:text-[#D97706] transition duration-150 ease-in-out font-medium">事業内容</a>
+                <a href="#contact"
+                   class="text-gray-600 hover:text-[#D97706] transition duration-150 ease-in-out font-medium">問い合わせ</a>
             </nav>
 
             <!-- モバイルメニューボタン -->
-            <button id="mobile-menu-button" class="md:hidden text-gray-500 hover:text-gray-700 p-2 rounded-md focus:outline-none">
-                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            <button id="mobile-menu-button"
+                    class="md:hidden text-gray-500 hover:text-gray-700 p-2 rounded-md focus:outline-none">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
             </button>
         </div>
     </div>
@@ -77,9 +89,12 @@
     <!-- モバイルメニュー -->
     <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-100">
         <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-[#D97706]">会社概要</a>
-            <a href="#business" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-[#D97706]">事業内容</a>
-            <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-[#D97706]">問い合わせ</a>
+            <a href="#about"
+               class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-[#D97706]">会社概要</a>
+            <a href="#business"
+               class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-[#D97706]">事業内容</a>
+            <a href="#contact"
+               class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-[#D97706]">問い合わせ</a>
         </div>
     </div>
 </header>
@@ -98,13 +113,13 @@
     <svg class="absolute inset-0 w-full h-full" viewBox="0 0 1440 810" fill="none" xmlns="http://www.w3.org/2000/svg">
         <defs>
             <linearGradient id="gradient-hero" x1="50%" y1="0%" x2="50%" y2="100%">
-                <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:0.3" />
-                <stop offset="100%" style="stop-color:#1E3A8A;stop-opacity:0.7" />
+                <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:0.3"/>
+                <stop offset="100%" style="stop-color:#1E3A8A;stop-opacity:0.7"/>
             </linearGradient>
         </defs>
         <rect width="1440" height="810" fill="url(#gradient-hero)"/>
-        <circle cx="200" cy="400" r="150" fill="rgba(255, 255, 255, 0.05)" />
-        <circle cx="1200" cy="300" r="200" fill="rgba(255, 255, 255, 0.03)" />
+        <circle cx="200" cy="400" r="150" fill="rgba(255, 255, 255, 0.05)"/>
+        <circle cx="1200" cy="300" r="200" fill="rgba(255, 255, 255, 0.03)"/>
     </svg>
 </section>
 
@@ -138,7 +153,7 @@
                     <div class="md:grid md:grid-cols-3 md:gap-4 pb-0">
                         <dt class="font-bold text-gray-600">役員</dt>
                         <dd class="mt-1 md:mt-0 md:col-span-2 text-gray-800 whitespace-nowrap">
-                            代表取締役　<span class="inline-block">高橋 相旼 (コウ ハクビン)</span>
+                            代表取締役　<span class="inline-block">高橋 相旼 (タカハシ サンミ)</span>
                         </dd>
                     </div>
                 </dl>
@@ -157,7 +172,11 @@
             <!-- 事業カード 1: 古物営業 -->
             <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100 card-hover transition duration-300 md:col-span-1">
                 <div class="text-[#D97706] mb-4">
-                    <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                    </svg>
                 </div>
                 <!-- タイトルサイズをtext-xlで統一 -->
                 <h3 class="text-xl font-bold text-gray-900 mb-3">古物売買及び競りあっせん業</h3>
@@ -172,7 +191,11 @@
             <!-- 事業カード 2: 貴金属・アクセサリー (text-xlに修正) -->
             <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100 card-hover transition duration-300 md:col-span-1">
                 <div class="text-[#D97706] mb-4">
-                    <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.592c.306-.922 1.603-.922 1.909 0l1.519 4.588a1 1 0 00.95.691h4.847c.915 0 1.258 1.167.59 1.83l-3.918 3.744a1 1 0 00-.316.923l1.519 4.588c.306.922-.756 1.685-1.57 1.112l-4.786-3.417a1 1 0 00-1.175 0l-4.786 3.417c-.813.573-1.879-.19-1.57-1.112l1.519-4.588a1 1 0 00-.316-.923L2.553 9.7a1 1 0 01.59-1.83h4.847a1 1 0 00.95-.691l1.519-4.588z"></path></svg>
+                    <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M11.049 2.592c.306-.922 1.603-.922 1.909 0l1.519 4.588a1 1 0 00.95.691h4.847c.915 0 1.258 1.167.59 1.83l-3.918 3.744a1 1 0 00-.316.923l1.519 4.588c.306.922-.756 1.685-1.57 1.112l-4.786-3.417a1 1 0 00-1.175 0l-4.786 3.417c-.813.573-1.879-.19-1.57-1.112l1.519-4.588a1 1 0 00-.316-.923L2.553 9.7a1 1 0 01.59-1.83h4.847a1 1 0 00.95-.691l1.519-4.588z"></path>
+                    </svg>
                 </div>
                 <h3 class="text-xl font-bold text-gray-900 mb-3">貴金属・アクセサリーの製造・販売</h3>
                 <p class="text-gray-600 text-sm">
@@ -183,7 +206,11 @@
             <!-- 事業カード 3: 物品の貿易・仲立 -->
             <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100 card-hover transition duration-300 md:col-span-1">
                 <div class="text-[#D97706] mb-4">
-                    <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                    <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                    </svg>
                 </div>
                 <!-- タイトルサイズをtext-xlで統一 -->
                 <h3 class="text-xl font-bold text-gray-900 mb-3">物品の貿易・輸出入及び仲立業</h3>
@@ -203,6 +230,10 @@
 
             <p class="text-gray-700 leading-relaxed text-sm md:text-base mt-6">
                 当店は、みなさまからお譲りいただいたお品物を<b>大切にお預かり</b>し、新しい持ち主のもとへつなぐお手伝いをしています。皆さまとの<b>ご縁を大切に</b>、<b>信頼されるお店</b>を目指してまいります。<br><br>
+                <!-- 修正: text-base (デフォルトサイズ) から text-sm に変更して文字を小さく -->
+                <span class="bg-amber-50 text-gray-900 font-medium mb-2 shadow-sm">
+                        「もう使わないけれど、誰かに喜んでもらえるかも」
+                </span>
                 そんな想いを大切に、<b>安心してご利用いただけるお店づくり</b>を心がけながら、お客様と社会の双方に喜ばれるサービスを提供してまいります。
             </p>
         </div>
@@ -223,7 +254,13 @@
                 <dl class="space-y-4 text-gray-700">
                     <!-- 住所 -->
                     <div class="flex items-start">
-                        <svg class="w-6 h-6 text-[#D97706] flex-shrink-0 mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <svg class="w-6 h-6 text-[#D97706] flex-shrink-0 mt-1 mr-3" fill="none" stroke="currentColor"
+                             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
                         <div>
                             <dt class="font-bold text-gray-900">所在地</dt>
                             <dd>
@@ -235,7 +272,11 @@
 
                     <!-- 電話番号 -->
                     <div class="flex items-start pt-4 border-t border-gray-100">
-                        <svg class="w-6 h-6 text-[#D97706] flex-shrink-0 mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        <svg class="w-6 h-6 text-[#D97706] flex-shrink-0 mt-1 mr-3" fill="none" stroke="currentColor"
+                             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
                         <div>
                             <dt class="font-bold text-gray-900">TEL (代表)</dt>
                             <dd class="text-xl font-mono text-[#D97706]"><a href="tel:0358494833">03-5849-4833</a></dd>
@@ -244,7 +285,13 @@
 
                     <!-- FAX番号 -->
                     <div class="flex items-start">
-                        <svg class="w-6 h-6 text-[#D97706] flex-shrink-0 mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.55 4.55a1 1 0 010 1.41L15 21m-2.772-2.772a1 1 0 01-1.414 0L10 17.586m-7.07-7.07a1 1 0 010-1.414l7.07-7.07a1 1 0 011.414 0l7.07 7.07a1 1 0 010 1.414"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15h1a2 2 0 002-2v-4a2 2 0 00-2-2h-4a2 2 0 00-2 2v4a2 2 0 002 2h1"></path></svg>
+                        <svg class="w-6 h-6 text-[#D97706] flex-shrink-0 mt-1 mr-3" fill="none" stroke="currentColor"
+                             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M15 10l4.55 4.55a1 1 0 010 1.41L15 21m-2.772-2.772a1 1 0 01-1.414 0L10 17.586m-7.07-7.07a1 1 0 010-1.414l7.07-7.07a1 1 0 011.414 0l7.07 7.07a1 1 0 010 1.414"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M15 15h1a2 2 0 002-2v-4a2 2 0 00-2-2h-4a2 2 0 00-2 2v4a2 2 0 002 2h1"></path>
+                        </svg>
                         <div>
                             <dt class="font-bold text-gray-900">FAX</dt>
                             <dd class="text-xl font-mono text-gray-700">03-5849-4838</dd>
@@ -253,10 +300,15 @@
 
                     <!-- 携帯番号 -->
                     <div class="flex items-start">
-                        <svg class="w-6 h-6 text-[#D97706] flex-shrink-0 mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                        <svg class="w-6 h-6 text-[#D97706] flex-shrink-0 mt-1 mr-3" fill="none" stroke="currentColor"
+                             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                        </svg>
                         <div>
                             <dt class="font-bold text-gray-900">携帯電話</dt>
-                            <dd class="text-xl font-mono text-[#D97706]"><a href="tel:08041194080">080-4119-4080</a></dd>
+                            <dd class="text-xl font-mono text-[#D97706]"><a href="tel:08041194080">080-4119-4080</a>
+                            </dd>
                         </div>
                     </div>
                 </dl>
@@ -305,14 +357,14 @@
 
 <script>
     // モバイルメニューのトグル処理
-    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+    document.getElementById('mobile-menu-button').addEventListener('click', function () {
         const mobileMenu = document.getElementById('mobile-menu');
         mobileMenu.classList.toggle('hidden');
     });
 
     // モバイルメニューのリンクをクリックした後にメニューを閉じる
     document.querySelectorAll('#mobile-menu a').forEach(link => {
-        link.addEventListener('click', function() {
+        link.addEventListener('click', function () {
             document.getElementById('mobile-menu').classList.add('hidden');
         });
     });
